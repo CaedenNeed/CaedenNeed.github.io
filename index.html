@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Worldly Peoples</title>
+    <title>Would You Rather?</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
+
+    <main>
+        <h1>Would You Rather?</h1>
+
+        <p>Which Would You Choose?</p>
+
+        <div class="choices">
+            <button id="choice1" onclick="choose(1)" aria-pressed="false">
+                Have super strength
+            </button>
+
+            <button id="choice2" onclick="choose(2)" aria-pressed="false">
+                Have super speed
+            </button>
+        </div>
+
+        <button id="next" onclick="nextQuestion()">Next Question</button>
+    </main>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
